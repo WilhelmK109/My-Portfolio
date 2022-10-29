@@ -38,16 +38,6 @@ body {
   right: 15px;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  top: 92px;
-  margin-left: 24px;
-  margin-right: 24px;
-  width: 375px;
-  height: 590px;
-}
-
 .home {
   display: flex;
   background-color: #1c1a19;
@@ -58,7 +48,16 @@ body {
   height: 590px;
   position: relative;
   top: 92px;
-  z-index: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  top: 92px;
+  margin-left: 24px;
+  margin-right: 24px;
+  width: 375px;
+  height: 590px;
 }
 
 .heading {
@@ -102,4 +101,262 @@ body {
   column-gap: 30px;
   padding-left: 10px;
   margin-top: 12px;
+}
+
+.work-container {
+  width: 375px;
+  height: 4000px;
+  padding: 120px 24px;
+  background: #fff;
+}
+
+.portfolio {
+  height: 3455px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio h1 {
+  font-size: 40px;
+  margin-top: 80px;
+  font-family: "Crete Round", sans-serif;
+  font-weight: 400;
+  align-items: flex-start;
+}
+
+hr {
+  width: 327px;
+  margin: 40px;
+  border: 1px solid #212121;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  left: 0;
+  margin-top: 20px;
+}
+
+.portfolio h2 {
+  font-size: 32px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-family: "Crete Round", sans-serif;
+  font-weight: 400;
+  line-height: 44px;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  color: #091e42;
+}
+
+.tools {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 12px;
+}
+
+.card ul {
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  width: 124px;
+  padding: 10px 20px;
+  background: #ff6b00;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+}
+
+.card-2 {
+  background: url(img/Img-2.png);
+  background-repeat: no-repeat;
+  width: 327px;
+  height: 386px;
+  padding: 104px 16px;
+  border: 1px solid #ccc;
+  margin-top: 30px;
+}
+
+.card-2 h2,
+.card-2 p {
+  color: #fff;
+}
+
+.card-2 h2 {
+  font-size: 32px;
+  font-family: "Crete Round", sans-serif;
+}
+
+.card-2 ul {
+  background: rgba(255, 255, 255, 0.24);
+  border: none;
+  color: #fff;
+}
+
+.btn2 {
+  width: 327px;
+  padding: 16px;
+  background: #ff6b00;
+  color: #fff;
+  border: none;
+  margin-top: -2px;
+  font-size: 15px;
+}
+
+.about-me {
+  position: absolute;
+  background: #000;
+  width: 375px;
+  height: 1901px;
+  left: 0;
+  margin-top: 180px;
+  background-image: url(img/Frame.png);
+  background-repeat: no-repeat;
+  background-position: top 395px right 0%;
+}
+
+.about-me h1 {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  margin-bottom: 4px;
+  color: #ff6b00;
+  margin-top: 120px;
+  margin-left: 24px;
+}
+
+.about-me p {
+  width: 327px;
+  height: 148px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 20px;
+  line-height: 24px;
+  color: #f4f5f7;
+  margin-bottom: 0%;
+  margin-left: 24px;
+}
+
+.btn3 {
+  padding: 16px 30px;
+  background: #ff6b00;
+  color: #fff;
+  border: none;
+  margin-top: 20px;
+  margin-left: 24px;
+}
+
+.button2:hover {
+  background-color: #002ead;
+  transition: 0.7s;
+}
+
+.hr2 {
+  display: flex;
+  position: absolute;
+  width: 327px;
+  margin-top: 220px;
+  margin-left: 24px;
+  border: 1px solid #fff;
+}
+
+.exp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+}
+
+.program-lang,
+.framework,
+.skills {
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+  padding-bottom: 44px;
+  font-family: "Crete Round", sans-serif;
+  font-size: 32px;
+}
+
+.program-lang2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 32px;
+}
+
+.program-lang2 ul {
+  align-self: center;
+}
+
+.program-lang {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  background-image: url(img/Rectangle\ 55.png);
+  background-repeat: no-repeat;
+  background-position: bottom 50px right 170px;
+  padding-left: 20px;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  width: 155px;
+  background-image: url(img/Rectangle\ 57.png);
+  background-repeat: no-repeat;
+  background-position: bottom 52px right 130px;
+}
+
+.framework {
+  display: flex;
+  justify-content: center;
+  width: 227px;
+  background-image: url(img/Rectangle\ 56.png);
+  background-repeat: no-repeat;
+  background-position: bottom 55px right 210px;
+  padding-left: 10px;
+}
+
+.program-lang li,
+.framework li,
+.skills li {
+  list-style-type: none;
+  color: #fff;
+  text-decoration: none;
+}
+
+.program-lang2 li {
+  list-style-type: none;
+  padding-bottom: 32px;
+  text-align: center;
+}
+
+.card ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.program-lang2 a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
 }
