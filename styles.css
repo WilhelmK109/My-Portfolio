@@ -117,7 +117,7 @@ body {
   align-items: center;
 }
 
-.portfolio h1 {
+.portfolio h2 {
   font-size: 40px;
   margin-top: 80px;
   font-family: "Crete Round", sans-serif;
@@ -138,7 +138,7 @@ hr {
   margin-top: 20px;
 }
 
-.portfolio h2 {
+.card h2 {
   font-size: 32px;
   margin-top: 12px;
   margin-bottom: 12px;
@@ -177,6 +177,11 @@ hr {
   font-size: 15px;
 }
 
+.btn:hover {
+  background-color: #002ead;
+  transition: 0.7s;
+}
+
 .card-2 {
   background: url(img/Img-2.png);
   background-repeat: no-repeat;
@@ -213,6 +218,11 @@ hr {
   font-size: 15px;
 }
 
+.btn2:hover {
+  background-color: cornflowerblue;
+  transition: 0.5s;
+}
+
 .about-me {
   position: absolute;
   background: #000;
@@ -225,7 +235,7 @@ hr {
   background-position: top 395px right 0%;
 }
 
-.about-me h1 {
+.about-me h2 {
   font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -261,9 +271,9 @@ hr {
   margin-left: 24px;
 }
 
-.button2:hover {
-  background-color: #002ead;
-  transition: 0.7s;
+.btn3:hover:hover {
+  background-color: #daa520;
+  transition: 0.4s;
 }
 
 .hr2 {
