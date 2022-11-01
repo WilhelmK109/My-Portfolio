@@ -382,19 +382,18 @@ hr {
   position: absolute;
   width: 375px;
   height: 844px;
-  left: 0px;
+  left: 0;
   top: 6038px;
   margin-top: 200px;
   background-color: #ffff;
 }
 
-
-.form-title{
+.form-title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
-  margin: 120px 24px 0px 24px;
+  padding: 0;
+  margin: 120px 24px 0 24px;
   gap: 24px;
   width: 327px;
   height: 216px;
@@ -404,14 +403,14 @@ hr {
   font-size: 32px;
   line-height: 44px;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 24px;
   margin: 34px 24px;
   width: 327px;
@@ -423,7 +422,7 @@ hr {
   height: 48px;
   margin: 0 24px;
   padding: 16px;
-  font-family: 'Inter';
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -436,7 +435,7 @@ hr {
 .form input:nth-child(1) {
   margin-top: 24px;
   border: none;
-  border-bottom: 1px solid #DBD8D7;
+  border-bottom: 1px solid #dbd8d7;
 }
 
 .form input:nth-child(2) {
@@ -448,30 +447,30 @@ hr {
   width: 131px;
   height: 48px;
   border: none;
-  background: #FF6B00;
+  background: #ff6b00;
   cursor: pointer;
 }
 
-textarea{
+textarea {
   width: 327px;
   height: 114px;
   margin-top: 24px;
   margin-left: 24px;
-  background: #FBF8F7;
+  background: #fbf8f7;
   padding: 12px;
-  font-family: 'Inter';
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   border: none;
-  color: #3C3A39;
+  color: #3c3a39;
 }
 
-.submit{
+.submit {
   width: 107px;
   height: 24px;
-  font-family: 'Inter';
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -480,7 +479,7 @@ textarea{
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .form input:nth-child(2):hover {
@@ -494,26 +493,24 @@ textarea{
   position: absolute;
   width: 375px;
   height: 72px;
-  left: 0px;
+  left: 0;
   top: 7081px;
   background-color: #fff;
-  border-top: 1px solid #DFE1E6;
+  border-top: 1px solid #dfe1e6;
 }
 
-.media-icon2 ul{
+.media-icon2 ul {
   display: flex;
   justify-content: center;
   margin: 18px 88px;
 }
 
-.media-icon2 ul li a{
+.media-icon2 ul li a {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 8px;
-
   width: 40px;
   height: 40px;
-
   border-radius: 8px;
 }
