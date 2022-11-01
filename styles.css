@@ -9,7 +9,7 @@
 body {
   position: relative;
   width: 375px;
-  height: 7500px;
+  height: 7160px;
   background: rgb(199, 197, 197);
 }
 
@@ -484,7 +484,7 @@ textarea {
 
 .form input:nth-child(2):hover {
   background-color: cornflowerblue;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 /* -----------------------------Media Icon section--------------------- */
@@ -513,4 +513,14 @@ textarea {
   width: 40px;
   height: 40px;
   border-radius: 8px;
+}
+
+.hr3 {
+  position: absolute;
+  width: 134px;
+  height: 5px;
+  bottom: -30px;
+  margin-left: 118px;
+  background: #0d151e;
+  border-radius: 10px;
 }
