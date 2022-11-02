@@ -301,22 +301,21 @@
 
   <section class="contact-form">
     <header class="form-title">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</header>
-    <form class="form" action="" method="post">
+    <form class="form" action="https://formspree.io/f/xrgdolkb" method="POST">
       <ul>
         <li>
           <input class="form-list" type="text" placeholder="Full Name" maxlength="30" required>
         </li>
         <li>
-          <input class="form-list" type="email" placeholder="Email address" required>
+          <input class="form-list" type="email" name="email" placeholder="Email address" required>
         </li>
         <li>
-          <textarea type="text" maxlength="500">Enter text here</textarea required>
+          <textarea name="message" maxlength="500">Enter text here</textarea required>
         </li>
       </ul>
-      <input class="submit" type="button" value="Get in touch">
+      <input class="submit" type="submit" value="Get in touch">
     </form>
   </section>
-
 
   <div class="media-icon2">
     <ul>
