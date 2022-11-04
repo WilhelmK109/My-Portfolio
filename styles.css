@@ -166,6 +166,15 @@ hr {
   margin-bottom: 12px;
 }
 
+.tools ul {
+  transition: background 1s, transform 1s ease-in-out;
+}
+
+/* .tools ul:hover {
+  background-color: #daa520;
+  transform: rotate(360deg);
+} */
+
 .card ul {
   background: rgb(255, 255, 255);
   padding: 10px;
