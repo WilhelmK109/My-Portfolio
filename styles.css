@@ -127,10 +127,11 @@ body {
   font-family: "Crete Round", sans-serif;
   font-weight: 400;
   align-items: flex-start;
+  transition: .5s;
 }
 
 .portfolio h2:hover {
-  font-size: 45px;
+  font-size: 35px;
 }
 
 hr {
