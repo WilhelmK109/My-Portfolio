@@ -127,11 +127,27 @@ body {
   font-family: "Crete Round", sans-serif;
   font-weight: 400;
   align-items: flex-start;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.portfolio h2:hover {
-  font-size: 35px;
+.card h2 {
+  font-size: 32px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-family: "Crete Round", sans-serif;
+  font-weight: 400;
+  line-height: 44px;
+}
+
+.card-2 ul {
+  background: rgba(255, 255, 255, 0.24);
+  border: none;
+  color: #fff;
+}
+
+.card-2 h2 {
+  font-size: 32px;
+  font-family: "Crete Round", sans-serif;
 }
 
 hr {
@@ -145,15 +161,6 @@ hr {
   grid-template-columns: 1fr;
   left: 0;
   margin-top: 20px;
-}
-
-.card h2 {
-  font-size: 32px;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  font-family: "Crete Round", sans-serif;
-  font-weight: 400;
-  line-height: 44px;
 }
 
 .card p {
@@ -171,19 +178,14 @@ hr {
   margin-bottom: 12px;
 }
 
-.tools ul {
-  transition: background 1s, transform 1s ease-in-out;
-}
-
-.tools ul:hover {
-  background-color: #daa520;
-  transform: rotate(360deg);
-} 
-
 .card ul {
   background: rgb(255, 255, 255);
   padding: 10px;
   border: 1px solid #ccc;
+}
+
+.tools ul {
+  transition: background 1s, transform 1s ease-in-out;
 }
 
 .btn {
@@ -212,17 +214,6 @@ hr {
 
 .card-2 h2,
 .card-2 p {
-  color: #fff;
-}
-
-.card-2 h2 {
-  font-size: 32px;
-  font-family: "Crete Round", sans-serif;
-}
-
-.card-2 ul {
-  background: rgba(255, 255, 255, 0.24);
-  border: none;
   color: #fff;
 }
 
@@ -264,6 +255,10 @@ hr {
   color: #ff6b00;
   margin-top: 120px;
   margin-left: 24px;
+}
+
+.portfolio h2:hover {
+  font-size: 35px;
 }
 
 .about-me p {
@@ -517,6 +512,11 @@ textarea {
   display: flex;
   justify-content: center;
   margin: 18px 88px;
+}
+
+.tools ul:hover {
+  background-color: #daa520;
+  transform: rotate(360deg);
 }
 
 .media-icon2 ul li a {
