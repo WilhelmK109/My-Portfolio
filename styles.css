@@ -438,6 +438,7 @@ body {
     margin: 40px;
     border: 1px solid #212121;
   }
+
   .card-2 {
     background: url(img/Img-2.png);
     background-repeat: no-repeat;
@@ -447,16 +448,19 @@ body {
     border: 1px solid #ccc;
     margin-top: 30px;
   }
+
   .form input:nth-child(1) {
     width: 327px;
     margin-top: 24px;
     border: none;
     border-bottom: 1px solid #dbd8d7;
   }
+
   textarea {
     width: 327px;
     height: 114px;
   }
+
   .contact-form {
     display: flex;
     flex-direction: column;
@@ -506,14 +510,7 @@ body {
     align-items: center;
     color: #979493;
   }
-  
-  .form input:nth-child(1) {
-    width: 327px;
-    margin-top: 24px;
-    border: none;
-    border-bottom: 1px solid #dbd8d7;
-  }
-  
+
   .form input:nth-child(2) {
     display: flex;
     flex-direction: row;
@@ -526,8 +523,8 @@ body {
     background: #ff6b00;
     cursor: pointer;
   }
-  
-  textarea {
+
+  .textmsg {
     width: 327px;
     height: 114px;
     margin-top: 24px;
@@ -542,7 +539,7 @@ body {
     border: none;
     color: #3c3a39;
   }
-  
+
   .submit {
     width: 107px;
     height: 24px;
@@ -557,7 +554,7 @@ body {
     letter-spacing: 0.03em;
     color: #fff;
   }
-  
+
   .form input:nth-child(2):hover {
     background-color: cornflowerblue;
     transition: 0.2s;
@@ -772,6 +769,7 @@ body {
     grid-template-columns: 25% 25% 25%;
     margin-left: 0%;
   }
+
   .contact {
     display: flex;
     width: 100%;
@@ -800,7 +798,6 @@ body {
 
   .form-list {
     width: 70%;
-    /*height: 48px;*/
     margin: 0 24px;
     padding: 16px;
     font-family: "Inter", sans-serif;
@@ -861,10 +858,6 @@ body {
     margin-left: 8%;
   }
 
-   {
-    width: 100%;
-  }
-
   .media-icon2 {
     display: flex;
     flex-direction: row;
@@ -894,7 +887,6 @@ body {
     padding-left: 5%;
     column-gap: 3%;
   }
-
 }
 
 @media (min-width: 1500px) {
