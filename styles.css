@@ -172,7 +172,7 @@ body {
 .card-2 ul {
   background: rgba(255, 255, 255, 0.24);
   border: none;
-  color: #fff;
+  color: #000;
 }
 
 .card-2 h2 {
@@ -269,10 +269,6 @@ body {
   margin-left: 24px;
 }
 
-.about p {
-.portfolio h2:hover {
-  font-size: 35px;
-}
 
 .about p {
   width: 327px;
@@ -326,7 +322,10 @@ body {
   bottom: 44px;
   font-family: "Crete Round", sans-serif;
   font-size: 32px;
-  align-content: baseline;
+}
+
+.language {
+margin-top: -13%;
 }
 
 .tech-language li,
