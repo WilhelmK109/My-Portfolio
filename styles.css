@@ -468,7 +468,7 @@ body {
     left: 0;
     background-color: #ffff;
   }
-  
+
   .form-title {
     display: flex;
     flex-direction: column;
@@ -486,7 +486,7 @@ body {
     text-align: center;
     color: #172b4d;
   }
-  
+
   .form {
     display: flex;
     flex-direction: column;
@@ -495,7 +495,7 @@ body {
     gap: 24px;
     width: 327px;
   }
-  
+
   .form-list {
     width: 327px;
     height: 48px;
