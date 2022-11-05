@@ -269,7 +269,6 @@ body {
   margin-left: 24px;
 }
 
-
 .about p {
   width: 327px;
   height: 148px;
@@ -325,7 +324,7 @@ body {
 }
 
 .language {
-margin-top: -13%;
+  margin-top: -13%;
 }
 
 .tech-language li,
