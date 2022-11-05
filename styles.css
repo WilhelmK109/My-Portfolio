@@ -157,13 +157,7 @@ body {
   font-family: "Crete Round", sans-serif;
   font-weight: 400;
   align-items: flex-start;
-}
-
-.card {
-  display: grid;
-  grid-template-columns: 1fr;
-  left: 0;
-  margin-top: 20px;
+  transition: 0.5s;
 }
 
 .card h2 {
@@ -173,6 +167,24 @@ body {
   font-family: "Crete Round", sans-serif;
   font-weight: 400;
   line-height: 44px;
+}
+
+.card-2 ul {
+  background: rgba(255, 255, 255, 0.24);
+  border: none;
+  color: #fff;
+}
+
+.card-2 h2 {
+  font-size: 32px;
+  font-family: "Crete Round", sans-serif;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  left: 0;
+  margin-top: 20px;
 }
 
 .card p {
@@ -196,6 +208,10 @@ body {
   border: 1px solid #ccc;
 }
 
+.tools ul {
+  transition: background 1s, transform 1s ease-in-out;
+}
+
 .btn {
   width: 124px;
   padding: 10px 20px;
@@ -212,17 +228,6 @@ body {
 
 .card-2 h2,
 .card-2 p {
-  color: #fff;
-}
-
-.card-2 h2 {
-  font-size: 32px;
-  font-family: "Crete Round", sans-serif;
-}
-
-.card-2 ul {
-  background: rgba(255, 255, 255, 0.24);
-  border: none;
   color: #fff;
 }
 
@@ -262,6 +267,11 @@ body {
   color: #ff6b00;
   margin-top: 120px;
   margin-left: 24px;
+}
+
+.about p {
+.portfolio h2:hover {
+  font-size: 35px;
 }
 
 .about p {
@@ -502,6 +512,11 @@ textarea {
   display: flex;
   justify-content: center;
   margin: 18px 88px;
+}
+
+.tools ul:hover {
+  background-color: #daa520;
+  transform: rotate(360deg);
 }
 
 .media-icon2 ul li a {
