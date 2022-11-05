@@ -15,24 +15,31 @@
 </head>
 
 <body>
-  <div class="container-box">
-    <header class="top">
-      <nav>
-        <a id="name" href="#">John Doe</a>
-        <a href="#">
-          <img class="ham" src="img/Union.png" alt="Union icon" />
-        </a>
-      </nav>
-    </header>
+  <div class="main-container">
+    <nav class="navbar">
+      <a id="name" href="#">John Doe</a>
+      <a href="#"><img class="ham" src="img/Union.png" alt="toggle button"/></a>
+      <div class="navbarlinks">
+        <ul>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#"><img src="img/Union2.png" alt=""></a></li>
+        </ul>
+      </div>
+    </nav>
+    
     <section class="home">
       <div class="container">
-        <h1 class="heading">Hey There.<br>I'm Wilhelm</span></h1>
-        <h2 class="sub-heading">I'm a Software Developer</h2>
-        <p class="description">I can help you build a product, feature or website. Look
-          through some of my work and experience! If you like what you see
-          and have a project you need coded,
-          don’t hestiate to contact me.
-        </p>
+        <div class="writing">
+          <h1 class="heading">Hey There.<br>I'm Wilhelm</span></h1>
+          <h2 class="sub-heading">I'm a Software Developer</h2>
+          <p class="description">I can help you build a product, feature or website. Look
+            through some of my work and experience! If you like what you see
+            and have a project you need coded,
+            don’t hestiate to contact me.
+          </p>
+        </div>
         <div class="media-icon">
           <ul>
             <li>
@@ -52,302 +59,318 @@
             </li>
             <li>
               <a href="#">
+                <img src="img/twitter.svg">
+              </a>
+            </li>
+            <li>
+              <a href="#">
                 <img src="img/medium.svg">
               </a>
             </li>
           </ul>
         </div>
+        <div class="background"><img src="" alt=""></div>
       </div>
     </section>
-  </div>
+  
 
-  <div class="work-container">
-    <section class="portfolio">
-      <h2>My Recent Works</h2>
-      <hr />
-      <div class="card">
-        <img src="img/Img Placeholder.png" alt="image" />
-        <h2>Multi-Post Stories</h2>
-        <p>
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a standard dummy text.
-        </p>
-        <div class="tools">
-          <ul>
-            <li>css</li>
-          </ul>
-          <ul>
-            <li>html</li>
-          </ul>
-          <ul>
-            <li>bootstrap</li>
-          </ul>
-          <ul>
-            <li>Ruby</li>
-          </ul>
+    <section class="work-container">
+      <div class="portfolio">
+        <div class="recent-work">
+          <div class="recent-work-h2">
+            <h2>My Recent Works</h2>
+            <hr/>
+          </div>
+        
+        <div class="post-stories">
+          <img src="img/Img Placeholder.png" alt="image" />
+          <div class="multi-post">
+            <h2>Multi-Post Stories</h2>
+            <p>
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a standard dummy text.
+            </p>
+            <div class="tools-1">
+              <ul>
+                <li>css</li>
+              </ul>
+              <ul>
+                <li>html</li>
+              </ul>
+              <ul>
+                <li>bootstrap</li>
+              </ul>
+              <ul>
+                <li>Ruby</li>
+              </ul>
+            </div>
+          <button class="btn" type="submit">See Project</button>
         </div>
-        <button class="btn" type="submit">See Project</button>
+        </div>
+        
+        <div class="card">
 
-        <div class="card-2">
-          <h2>Profesional Art<br />Printing Data</h2>
-          <p>
+          <div class="card-2">
+            <h2 class="ds-card-2">Profesional Art<br />Printing Data</h2>
+            <p class="ds-card-2">
             A daily selection of privately personalized reads; no accounts or
             sign-ups required. has been the industry's standard
-          </p>
-          <div class="tools">
-            <ul>
-              <li>html</li>
-            </ul>
-            <ul>
-              <li>bootstrap</li>
-            </ul>
-            <ul>
-              <li>Ruby</li>
-            </ul>
+            </p>
+            <div class="tools ds-card-2">
+              <ul>
+                <li>html</li>
+              </ul>
+              <ul>
+                <li>bootstrap</li>
+              </ul>
+              <ul>
+                <li>Ruby</li>
+              </ul>
+            </div>
+            <button class="btn2" id="btn2" type="submit">See Project</button>
           </div>
-        </div>
-        <button class="btn2" type="submit">See Project</button>
 
-        <div class="card-2">
-          <h2>Profesional Art<br />Printing Data</h2>
-          <p>
+          <div class="card-2">
+            <h2>Profesional Art<br />Printing Data</h2>
+            <p>
             A daily selection of privately personalized reads; no accounts or
             sign-ups required. has been the industry's standard
-          </p>
-          <div class="tools">
-            <ul>
-              <li>html</li>
-            </ul>
-            <ul>
-              <li>bootstrap</li>
-            </ul>
-            <ul>
-              <li>Ruby</li>
-            </ul>
+            </p>
+            <div class="tools">
+              <ul>
+                <li>html</li>
+              </ul>
+              <ul>
+                <li>bootstrap</li>
+              </ul>
+              <ul>
+                <li>Ruby</li>
+              </ul>
+            </div>
+            <button class="btn2" type="submit">See Project</button>
           </div>
-        </div>
-        <button class="btn2" type="submit">See Project</button>
 
-        <div class="card-2">
-          <h2>Profesional Art<br />Printing Data</h2>
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard
-          </p>
-          <div class="tools">
-            <ul>
-              <li>html</li>
-            </ul>
-            <ul>
-              <li>bootstrap</li>
-            </ul>
-            <ul>
-              <li>Ruby</li>
-            </ul>
+          <div class="card-2">
+            <h2>Profesional Art<br />Printing Data</h2>
+            <p>
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard
+            </p>
+            <div class="tools">
+              <ul>
+                <li>html</li>
+              </ul>
+              <ul>
+                <li>bootstrap</li>
+              </ul>
+              <ul>
+                <li>Ruby</li>
+              </ul>
+            </div>
+            <button class="btn2" type="submit">See Project</button>
           </div>
-        </div>
-        <button class="btn2" type="submit">See Project</button>
 
-        <div class="card-2">
-          <h2>Profesional Art<br />Printing Data</h2>
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard
-          </p>
-          <div class="tools">
-            <ul>
-              <li>html</li>
-            </ul>
-            <ul>
-              <li>bootstrap</li>
-            </ul>
-            <ul>
-              <li>Ruby</li>
-            </ul>
+          <div class="card-2">
+            <h2>Profesional Art<br />Printing Data</h2>
+            <p>
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard
+            </p>
+            <div class="tools">
+              <ul>
+                <li>html</li>
+              </ul>
+              <ul>
+                <li>bootstrap</li>
+              </ul>
+              <ul>
+                <li>Ruby</li>
+              </ul>
+            </div>
+            <button class="btn2" type="submit">See Project</button>
           </div>
-        </div>
-        <button class="btn2" type="submit">See Project</button>
 
-        <div class="card-2">
-          <h2>Profesional Art<br />Printing Data</h2>
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard
-          </p>
-          <div class="tools">
-            <ul>
-              <li>html</li>
-            </ul>
-            <ul>
-              <li>bootstrap</li>
-            </ul>
-            <ul>
-              <li>Ruby</li>
-            </ul>
+          <div class="card-2">
+            <h2>Profesional Art<br />Printing Data</h2>
+            <p>
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard
+            </p>
+            <div class="tools">
+              <ul>
+                <li>html</li>
+              </ul>
+              <ul>
+                <li>bootstrap</li>
+              </ul>
+              <ul>
+                <li>Ruby</li>
+              </ul>
+            </div>
+            <button class="btn2" type="submit">See Project</button>
           </div>
-        </div>
-        <button class="btn2" type="submit">See Project</button>
 
-        <div class="card-2">
-          <h2>Profesional Art<br />Printing Data</h2>
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard
-          </p>
-          <div class="tools">
-            <ul>
-              <li>html</li>
-            </ul>
-            <ul>
-              <li>bootstrap</li>
-            </ul>
-            <ul>
-              <li>Ruby</li>
-            </ul>
+          <div class="card-2">
+            <h2>Profesional Art<br />Printing Data</h2>
+            <p>
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard
+            </p>
+            <div class="tools">
+              <ul>
+                <li>html</li>
+              </ul>
+              <ul>
+                <li>bootstrap</li>
+              </ul>
+              <ul>
+                <li>Ruby</li>
+              </ul>
+            </div>
           </div>
+          <button class="btn2" type="submit">See Project</button>
         </div>
-        <button class="btn2" type="submit">See Project</button>
       </div>
     </section>
 
     <section class="about-me">
-      <h2>About me</h2>
-      <p>Hello I’m a software developer! I can help you build a product , feature or website.
-        Look through some of my work and experience! If you like what you see and have a project you need coded,
-        don’t hestiate to contact me.
-      </p>
-      <button class="btn3" type="submit">Get My Resume</button>
-      <hr class="hr2">
-      <div class="exp">
-        <div class="program-lang">
-          <ul>
-            <li>
-              <h4>Language</h4>
-            </li>
-          </ul>
+      <div class="about">
+        <h2>About me</h2>
+        <p>Hello I’m a software developer! I can help you build a product , feature or website.
+          Look through some of my work and experience! If you like what you see and have a project you need coded,
+          don’t hestiate to contact me.
+        </p>
+        <button class="btn3" type="submit">Get My Resume</button>
+        <hr class="hr2">
+        <div class="exp">
+          <div class="language">
+            <ul>
+              <li id="lang">Language</li>
+              <div class="tech-language">
+                <ul>
+                  <li>
+                    <a href="">Javascript</a>
+                  </li>
+                  <li>
+                    <a href="">Ruby</a>
+                  </li>
+                  <li>
+                    <a href="">Html</a>
+                  </li>
+                  <li>
+                    <a href="">Css</a>
+                  </li>
+                </ul>
+              </div>
+            </ul>
+          </div>
+          
+          <div class="framework">
+            <ul>
+              <li id="frame">Frameworks</li>
+              <div class="tech-framework">
+                <ul>
+                  <li>
+                    <a href="">Bootstrap</a>
+                  </li>
+                  <li>
+                    <a href="">Ruby on Rails</a>
+                  </li>
+                  <li>
+                    <a href="">RSPec</a>
+                  </li>
+                  <li>
+                    <a href="">CapyBara</a>
+                  </li>
+                  <li>
+                    <a href="">Selenium</a>
+                  </li>
+                </ul>
+              </div>
+            </ul> 
+          </div>
+          
+          <div class="skills">
+            <ul>
+              <li id="skill">Skills</li>
+              <div class="tech-skills">
+                <ul>
+                  <li>
+                    <a href="">Codekit</a>
+                  </li>
+                  <li>
+                    <a href="">Github</a>
+                  </li>
+                  <li>
+                    <a href="">Codepen</a>
+                  </li>
+                  <li>
+                    <a href="">Gitlab</a>
+                  </li>
+                  <li>
+                    <a href="">Terminal</a>
+                  </li>
+                </ul>
+              </div>
+            </ul> 
+          </div> 
         </div>
-        <div class="program-lang2">
-          <ul>
-            <li>
-              <a href="">Javascript</a>
-            </li>
-            <li>
-              <a href="">Ruby</a>
-            </li>
-            <li>
-              <a href="">Html</a>
-            </li>
-            <li>
-              <a href="">Css</a>
-            </li>
-          </ul>
-        </div>
-        <div class="framework">
-          <ul>
-            <li id="frame">
-              <h4>Frameworks</h4>
-            </li>
-          </ul>
-        </div>
-        <div class="program-lang2">
-          <ul>
-            <li>
-              <a href="">Bootstrap</a>
-            </li>
-            <li>
-              <a href="">Ruby on Rails</a>
-            </li>
-            <li>
-              <a href="">RSPec</a>
-            </li>
-            <li>
-              <a href="">CapyBara</a>
-            </li>
-            <li>
-              <a href="">Selenium</a>
-            </li>
-          </ul>
-        </div>
-        <div class="skills">
-          <ul>
-            <li>
-              <h4>Skills</h4>
-            </li>
-          </ul>
-        </div>
-        <div class="program-lang2">
-          <ul>
-            <li>
-              <a href="">Codekit</a>
-            </li>
-            <li>
-              <a href="">Github</a>
-            </li>
-            <li>
-              <a href="">Codepen</a>
-            </li>
-            <li>
-              <a href="">Gitlab</a>
-            </li>
-            <li>
-              <a href="">Terminal</a>
-            </li>
-          </ul>
-        </div>
+
       </div>
     </section>
+
+    <section class="contact-form">
+      <div class="contact">
+        <header class="form-title">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</header>
+        <form class="form" action="https://formspree.io/f/xrgdolkb" method="POST">
+          <ul>
+            <li>
+              <input class="form-list" type="text" placeholder="Full Name" maxlength="30" required>
+            </li>
+            <li>
+              <input class="form-list" type="email" name="email" placeholder="Email address" required>
+            </li>
+            <li>
+              <textarea class="textmsg" name="message" maxlength="500">Enter text here</textarea required>
+            </li>
+          </ul>
+          <input class="submit" type="submit" value="Get in touch">
+        </form>
+      </div>
+
+      <footer class="media-icon2"> 
+        <ul>
+          <li>
+            <a href="#">
+              <img src="img/Vector.svg">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/Group.svg">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/Vector(2).svg">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/Vector(1).svg">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/Vector(3).svg">
+            </a>
+          </li>
+        </ul>
+        <hr class="hr3">
+      </footer>
+    </section>
+
   </div>
-
-  <section class="contact-form">
-    <header class="form-title">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</header>
-    <form class="form" action="https://formspree.io/f/xrgdolkb" method="POST">
-      <ul>
-        <li>
-          <input class="form-list" type="text" placeholder="Full Name" maxlength="30" required>
-        </li>
-        <li>
-          <input class="form-list" type="email" name="email" placeholder="Email address" required>
-        </li>
-        <li>
-          <textarea name="message" maxlength="500">Enter text here</textarea required>
-        </li>
-      </ul>
-      <input class="submit" type="submit" value="Get in touch">
-    </form>
-  </section>
-
-  <div class="media-icon2">
-    <ul>
-      <li>
-        <a href="#">
-          <img src="img/Vector.svg">
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="img/Group.svg">
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="img/Vector(2).svg">
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="img/Vector(1).svg">
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="img/Vector(3).svg">
-        </a>
-      </li>
-    </ul>
-    <hr class="hr3">
-  </div>
-
 </body>
-
 </html>
