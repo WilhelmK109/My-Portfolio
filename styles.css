@@ -389,112 +389,6 @@ body {
   list-style: none;
 }
 
-/* -------------------contact form section--------------------- */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  left: 0;
-  background-color: #ffff;
-}
-
-.form-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
-  margin: 120px 24px 0 24px;
-  gap: 24px;
-  width: 327px;
-  height: 216px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  text-align: center;
-  color: #172b4d;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: nowrap;
-  gap: 24px;
-  width: 327px;
-}
-
-.form-list {
-  width: 327px;
-  height: 48px;
-  margin: 0 24px;
-  padding: 16px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  color: #979493;
-}
-
-.form input:nth-child(1) {
-  margin-top: 24px;
-  border: none;
-  border-bottom: 1px solid #dbd8d7;
-}
-
-.form input:nth-child(2) {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px;
-  gap: 10px;
-  width: 131px;
-  height: 48px;
-  border: none;
-  background: #ff6b00;
-  cursor: pointer;
-}
-
-textarea {
-  width: 327px;
-  height: 114px;
-  margin-top: 24px;
-  margin-left: 24px;
-  background: #fbf8f7;
-  padding: 12px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  border: none;
-  color: #3c3a39;
-}
-
-.submit {
-  width: 107px;
-  height: 24px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #fff;
-}
-
-.form input:nth-child(2):hover {
-  background-color: cornflowerblue;
-  transition: 0.2s;
-}
-
 /* -----------------------------Media Icon section--------------------- */
 
 .media-icon2 {
@@ -544,7 +438,6 @@ textarea {
     margin: 40px;
     border: 1px solid #212121;
   }
-
   .card-2 {
     background: url(img/Img-2.png);
     background-repeat: no-repeat;
@@ -554,12 +447,128 @@ textarea {
     border: 1px solid #ccc;
     margin-top: 30px;
   }
+  .form input:nth-child(1) {
+    width: 327px;
+    margin-top: 24px;
+    border: none;
+    border-bottom: 1px solid #dbd8d7;
+  }
+  textarea {
+    width: 327px;
+    height: 114px;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    left: 0;
+    background-color: #ffff;
+  }
+  
+  .form-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 120px 24px 0 24px;
+    gap: 24px;
+    width: 327px;
+    height: 216px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    color: #172b4d;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 24px;
+    width: 327px;
+  }
+  
+  .form-list {
+    width: 327px;
+    height: 48px;
+    margin: 0 24px;
+    padding: 16px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #979493;
+  }
+  
+  .form input:nth-child(1) {
+    width: 327px;
+    margin-top: 24px;
+    border: none;
+    border-bottom: 1px solid #dbd8d7;
+  }
+  
+  .form input:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    gap: 10px;
+    width: 131px;
+    height: 48px;
+    border: none;
+    background: #ff6b00;
+    cursor: pointer;
+  }
+  
+  textarea {
+    width: 327px;
+    height: 114px;
+    margin-top: 24px;
+    margin-left: 24px;
+    background: #fbf8f7;
+    padding: 12px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    border: none;
+    color: #3c3a39;
+  }
+  
+  .submit {
+    width: 107px;
+    height: 24px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+  }
+  
+  .form input:nth-child(2):hover {
+    background-color: cornflowerblue;
+    transition: 0.2s;
+  }
 }
 
 /* ---------desktop media queries...... */
 @media (min-width: 768px) {
   .navbar {
     display: flex;
+    padding: 0% 10%;
     height: 72px;
   }
 
@@ -678,7 +687,7 @@ textarea {
 
   .card {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     width: 85%;
     margin-left: 10%;
   }
@@ -695,7 +704,7 @@ textarea {
     background-size: cover;
     width: 327px;
     height: 400px;
-    padding: 104px 16px;
+    padding: 104px 5%;
     border: 1px solid #ccc;
     margin-top: 30px;
     padding-bottom: 10px;
@@ -706,7 +715,7 @@ textarea {
     background-repeat: none;
     width: 327px;
     height: 400px;
-    padding: 104px 16px;
+    padding: 104px 5%;
     border: 1px solid #ccc;
     margin-top: 30px;
     background-size: cover;
@@ -718,7 +727,7 @@ textarea {
     background-repeat: none;
     width: 327px;
     height: 400px;
-    padding: 104px 16px;
+    padding: 104px 5%;
     border: 1px solid #ccc;
     margin-top: 30px;
     background-size: cover;
@@ -763,36 +772,138 @@ textarea {
     grid-template-columns: 25% 25% 25%;
     margin-left: 0%;
   }
-
   .contact {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    align-content: center;
-    margin: 0% 10% 8% 10%;
-    gap: 24px;
+    width: 100%;
+    margin-left: 5%;
+  }
+
+  .form-title {
+    width: 25%;
+    margin: 10% 5% 10% 0%;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+  }
+
+  .contact-form {
+    background-color: #ffff;
   }
 
   .form {
-    margin-top: 5%;
+    width: 60%;
+    margin: 8% 5% 10% 0%;
   }
 
-  .form input:nth-child(1) {
-    width: 180%;
+  .form-list {
+    width: 70%;
+    /*height: 48px;*/
+    margin: 0 24px;
+    padding: 16px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #979493;
+    border: none;
+    border-bottom: 1px solid #979493;
+    background-color: #ffff;
   }
 
-  textarea {
-    width: 180%;
-    height: fit-content;
+  .textmsg {
+    width: 70%;
+    height: 114px;
+    margin-top: 24px;
+    margin-left: 24px;
+    background: #fbf8f7;
+    padding: 12px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    border: none;
+    color: #3c3a39;
   }
 
-  .form input:nth-child(3) {
-    margin-left: 0%;
+  .form input:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    gap: 10px;
+    width: 131px;
+    height: 48px;
+    border: none;
+    background: #ff6b00;
+    cursor: pointer;
+  }
+
+  .submit {
+    width: 107px;
+    height: 24px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+    margin-left: 8%;
+  }
+
+   {
+    width: 100%;
   }
 
   .media-icon2 {
     display: flex;
     flex-direction: row;
-    margin-left: 40%;
+    margin-left: 35%;
+    border-top: 1px solid #dfe1e6;
+  }
+}
+
+/* -------card code for other screen sizes ------- */
+@media (min-width: 960px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 85%;
+    margin-left: 10%;
+    padding-left: 5%;
+    column-gap: 3%;
+  }
+}
+
+@media (min-width: 1240px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 85%;
+    margin-left: 0%;
+    padding-left: 5%;
+    column-gap: 3%;
+  }
+
+}
+
+@media (min-width: 1500px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 85%;
+    margin-left: 4%;
+    padding-left: 5%;
+    column-gap: 3%;
   }
 }
