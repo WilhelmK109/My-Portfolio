@@ -95,6 +95,14 @@ body {
   width: 100%;
 }
 
+.writing {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  margin-right: 24px;
+  width: 100%;
+}
+
 .heading {
   font-family: "Crete Round", sans-serif;
   font-style: normal;
@@ -432,6 +440,7 @@ body {
   border-radius: 10px;
 }
 
+/* ------ some media queries for mobile ----- */
 @media (max-width: 767px) {
   hr {
     width: 327px;
@@ -447,6 +456,23 @@ body {
     padding: 104px 16px;
     border: 1px solid #ccc;
     margin-top: 30px;
+  }
+
+  .ds-card-2 ul {
+    margin-bottom: 5%;
+    position: absolute;
+  }
+
+  #btn2 {
+    width: 327px;
+    position: absolute;
+    padding: 16px;
+    background: #ff6b00;
+    color: #fff;
+    border: none;
+    margin-top: -10px;
+    left: 3.7%;
+    font-size: 15px;
   }
 
   .form input:nth-child(1) {
