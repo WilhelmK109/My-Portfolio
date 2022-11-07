@@ -1,9 +1,5 @@
 # My-Portfolio
-Set up a mobile version portfolio
-
-# Mobile version
-
-> In this project, you will precisely replicate one of the portfolio templates we are providing for you. However, later on during your Microverse journey you will include your own projects in the portfolio in order to use it for job searching.
+my portfolio for job searching 
 
 ## Built With
 
@@ -30,6 +26,8 @@ To get a local copy up and running follow these simple example steps.
 ## Authors
 
 - GitHub: [@WilhelmK109](https://github.com/WilhelmK109)
+
+- Online link: https://wilhelmk109.github.io/My-Portfolio/
 
 ## 🤝 Contributing
 
