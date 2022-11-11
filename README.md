@@ -9,6 +9,9 @@ my portfolio for job searching
 
 [Live Demo Link](https://livedemo.com)
 
+## Project presentation video: 
+Link to video: https://www.loom.com/share/9bfdaf26a6a3495fad1cb3af2ee46359
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
