@@ -620,6 +620,20 @@ body {
     color: #3c3a39;
   }
 
+  .msg {
+    width: 327px;
+    height: auto;
+    margin-left: 15%;
+    background: #fbf8f7;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1c1a19;
+    text-align: center;
+  }
+
   .submit {
     width: 107px;
     height: 24px;
@@ -907,6 +921,20 @@ body {
     border: none;
     color: #3c3a39;
   }
+
+  .msg {
+    width: 70%;
+    height: auto;
+    background: #fbf8f7;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1c1a19;
+    margin-top: 5%;
+  }
+
 
   .form input:nth-child(2) {
     display: flex;
