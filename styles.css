@@ -231,10 +231,10 @@ hr {
 
 .card {
   background: url(img/Img-2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 327px;
-    height: 386px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 327px;
+  height: 386px;
 }
 
 .card-2 {
@@ -276,10 +276,9 @@ hr {
   display: inline;
   color: #fff;
   font-family: "Roboto", sans-serif;
-  background-color: #3c3a39;
   padding: 10px 12px;
   margin-right: 5px;
-  background: rgba(255, 255, 255, 0.24);
+  background-color: rgba(255, 255, 255, 0.24);
 }
 
 .see-project-btn {
@@ -288,15 +287,6 @@ hr {
   justify-items: stretch;
   margin-top: -25px;
   height: 52px;
-}
-
-.btn {
-  width: 124px;
-  padding: 10px 20px;
-  background: #ff6b00;
-  color: #fff;
-  border: none;
-  font-size: 15px;
 }
 
 .btn:hover {
@@ -456,11 +446,6 @@ hr {
   font-size: 20px;
   color: #fff;
 }
-
-/*.card ul li {
-  text-decoration: none;
-  list-style: none;
-}*/
 
 /* -----------------------------Media Icon section--------------------- */
 
@@ -784,7 +769,6 @@ hr {
   }
 
   .multi-post p {
-    font-size: 20px;
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
@@ -808,7 +792,6 @@ hr {
     margin-right: 10%;
     margin-left: 10%;
     width: 90%;
-    /*padding-left: 5%;*/
     column-gap: 3%;
   }
 
@@ -827,33 +810,6 @@ hr {
     margin-top: 30px;
     padding-bottom: 10px;
   }
-
-  /*.card:nth-child(1) {
-    background-image: url(img/Img-1.png);
-    background-repeat: none;
-    width: 327px;
-    height: 400px;
-    padding: 104px 5%;
-    border: 1px solid #ccc;
-    margin-top: 30px;
-    background-size: cover;
-  }*/
-
-  /*.card:nth-child(2),
-  .card-2:nth-child(5) {
-    background-image: url(img/Img-3.png);
-    background-repeat: none;
-    width: 327px;
-    height: 400px;
-    padding: 104px 5%;
-    border: 1px solid #ccc;
-    margin-top: 30px;
-    background-size: cover;
-  }*/
-
-  /*.ds-card-2 {
-    display: none;
-  }*/
 
   .btn2 {
     display: none;
