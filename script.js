@@ -11,7 +11,7 @@ document.querySelectorAll('.nav-menu').forEach((navLink) => navLink.addEventList
   navMenu.classList.remove('active');
 }));
 
-// Contact form email validation
+/*=============Contact form email validation============*/
 const validateForm = document.querySelector('.form');
 const errorMsg = document.querySelector('.msg');
 
@@ -178,3 +178,57 @@ const selectPopupWindow = document.querySelector('.popup-window-container');
     }
 });
 
+/*=================Local Storage==============*/
+function storageAvailable(type) {
+  let storage;
+  try {
+    storage = window[type];
+    const x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
+  } catch (e) {
+    return e instanceof DOMException && (
+
+      e.code === 22
+
+            || e.code === 1014
+
+            || e.name === 'QuotaExceededError'
+
+            || e.name === 'NS_ERROR_DOM_QUOTA_REACHED')
+
+            && (storage && storage.length !== 0);
+  }
+}
+
+if (storageAvailable('localStorage')) {
+  const inputs = [validateForm.name, validateForm.email, validateForm.message];
+
+  inputs.forEach((input) => {
+    input.addEventListener('input', () => {
+      const dataStorage = {
+        fullName: validateForm.name.value,
+        email: validateForm.email.value,
+        message: validateForm.message.value,
+      };
+
+      localStorage.setItem('data', JSON.stringify(dataStorage));
+    });
+  });
+
+  const getInput = JSON.parse(localStorage.getItem('data'));
+
+  if (getInput) {
+    validateForm.name.value = getInput.fullName;
+    validateForm.message.value = getInput.message;
+    validateForm.email.value = getInput.email;
+  }
+}
+
+const savedData = JSON.parse(localStorage.getItem(1));
+if (savedData !== null) {
+  fName.value = savedData.name;
+  uEmail.value = savedData.email;
+  uMessage.value = savedData.message;
+}
