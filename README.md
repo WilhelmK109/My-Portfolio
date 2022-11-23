@@ -136,8 +136,8 @@ You can deploy this project using:
 👤 **Author1**
 
 - GitHub: [@WilhelmK109](https://github.com/WilhelmK109)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- Twitter: [@twitterhandle](https://twitter.com/ActiveK7)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/wilhelm-kamulunga-613675114/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -175,7 +175,8 @@ If you like this project please give a ⭐️!
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank...
+I would like to thank all the people who have supported the development of this project:
+- Sane Myberg
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
