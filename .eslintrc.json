@@ -14,6 +14,7 @@
     "no-shadow": "off",
     "no-param-reassign": "off",
     "eol-last": "off",
+<<<<<<< HEAD
     "import/extensions": [ 1, {
       "js": "always", "json": "always"
     }]
@@ -23,3 +24,15 @@
     "build/"
   ]
 }
+=======
+    "import/extensions": [
+      1,
+      {
+        "js": "always",
+        "json": "always"
+      }
+    ]
+  },
+  "ignorePatterns": ["dist/", "build/"]
+}
+>>>>>>> 599fef53be1c0db187d6e08bbfd1a51f7ad56848
