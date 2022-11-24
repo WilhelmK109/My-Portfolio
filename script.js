@@ -83,6 +83,34 @@ if (savedData !== null) {
 
 /*==========POPUP WINDOW==========*/
 
+var displayPopupItems = (project_card) => {
+  var headerDetails = document.querySelector('.popup-header-div h2');
+  headerDetails.textContent = project_card.header;
+
+  var technologiesList = document.querySelector('.post-stories-tech-list');
+
+  document.querySelectorAll('.post-stories-tech').forEach(element => {
+      element.remove();
+  });
+
+  project_card.technologies.forEach(element => {
+      var technnologies_list_item = document.createElement('li');
+      technnologies_list_item.classList.add('post-stories-tech');
+      technnologies_list_item.textContent = element;
+      technologiesList.appendChild(technnologies_list_item);
+  });
+
+  document.querySelector('.popup-info-div img').setAttribute('src', project_card.img_src);
+  document.querySelector('.popup-paragraph-container p').textContent = project_card.paragraph;
+
+  var popupDetails = document.getElementById('popup-window-section');
+  popupDetails.classList.toggle('active');
+};
+  
+document.querySelector('.cancel-popup-window').addEventListener('click', function (){
+  displayPopupItems(projectCardData[0]);
+});
+
 const projectCardData = [
   {
       header: "Profesional Art Printing Data More",
@@ -178,35 +206,20 @@ function createProjectCards (project_card) {
 }
 
 
-  var displayPopupItems = (project_card) => {
-  const headerDetails = document.querySelector('.popup-header-div h2');
-  headerDetails.textContent = project_card.header;
-
-  var technologiesList = document.querySelector('.post-stories-tech-list');
-
-  document.querySelectorAll('.post-stories-tech').forEach(element => {
-      element.remove();
-  });
-
-  project_card.technologies.forEach(element => {
-      const technnologies_list_item = document.createElement('li');
-      technnologies_list_item.classList.add('.post-stories-tech');
-      technnologies_list_item.textContent = element;
-      technologiesList.appendChild(technnologies_list_item);
-  });
-
-  document.querySelector('.popup-info-div img').setAttribute('src', project_card.img_src);
-  document.querySelector('.popup-paragraph-container p').textContent = project_card.paragraph;
-
-  const popupDetails = document.querySelector('.popup-container');
-  popupDetails.classList.toggle('active');
-};
-  
-document.querySelector('.cancel-popup-window').addEventListener('click', function (){
-  displayPopupItems(projectCardData[0]);
-});
-
 document.querySelector('.post-stories-btn-div button').addEventListener('click', function (){
   displayPopupItems(projectCardData[0]);
 });
+
+var popupWindowSection = document.getElementById("popup-window-section");
+var button = document.getElementsByClassName('.btn');
+
+button.onclick = function () {
+  if(popupWindowSection.classNmae == "open") {
+    // shrink the popup window
+    popupWindowSection.className = "";
+  } else {
+    //epand the popup window
+    popupWindowSection.className = open;
+ }
+};
 
