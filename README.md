@@ -201,5 +201,3 @@ I would like to thank all the people who have supported the development of this 
 This project is [MIT](./LICENSE) licensed.
 Click this link for more:
 https://github.com/WilhelmK109/My-Portfolio/blob/main/LICENSE
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
