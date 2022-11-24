@@ -281,7 +281,7 @@ hr {
   background-color: rgba(255, 255, 255, 0.24);
 }
 
-.see-project-btn {
+.see-project-btn-div {
   display: flex;
   justify-content: center;
   justify-items: stretch;

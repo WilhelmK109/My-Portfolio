@@ -80,3 +80,133 @@ if (savedData !== null) {
   uEmail.value = savedData.email;
   uMessage.value = savedData.message;
 }
+
+/*==========POPUP WINDOW==========*/
+
+const projectCardData = [
+  {
+      header: "Profesional Art Printing Data More",
+      paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+      technologies: ['html', 'css', 'javascript'],
+      img_src: "img/Snapsoot-Portfolio-Large.png",
+  },
+  {
+      header: "Data Dashboard Healthcare",
+      paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+      technologies: ['html', 'css', 'javascript'],
+      img_src: "img/Snapshoot-Portfolio-Large.png",
+  },
+  {
+      header: "Website Portfolio",
+      paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+      technologies: ['html', 'css', 'javascript'],
+      img_src: "img/Img-1.png",
+  },
+  {
+      header: "Profesional Art Printing Data",
+      paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+      technologies: ['html', 'css', 'javascript'],
+      img_src: "img/Snapshoot-Portfolio-Large.png",
+  },
+  {
+      header: "Profetional Art Printing Data More",
+      paragraph: "We must create better relations with the EARTHLINGS",
+      technologies: ['html', 'css', 'javascript'],
+      img_src: "img/Img-1.png",
+  },
+  {
+      header: "Website Protfolio",
+      paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+      technologies: ['html', 'css', 'javascript'],
+      img_src: "img/Snapshoot-Portfolio-Large.png",
+  }
+];
+
+
+function createProjectCards (project_card) {
+
+  var projectCardDiv = document.createElement('div');
+  projectCardDiv.className.add('card');
+  document.getElementsByClassName('.work-container').appendChild(projectCardDiv);
+
+  var projectButton = document.createElement('button');
+  projectButton.className.add('card-hover');
+  projectButton.addEventListener('click', function (){
+    displayPopupItems(project_card);
+  });
+
+  projectCardDiv.appendChild(projectButton);
+
+  var projectDetailsDiv = document.createElement('div');
+  projectDetailsDiv.className.add('card-2');
+  projectCardDiv.appendChild(projectDetailsDiv);
+
+  var projectHeader = document.createElement('h2');
+  projectHeader.textContent = project_card.header;
+  projectDetailsDiv.appendChild(projectHeader);
+
+  var projectText = document.createElement('p');
+  projectText.textContent = project_card.paragraph;
+  projectDetailsDiv.appendChild(projectText);
+
+  var cardTechList = document.createElement('ul');
+  cardTechList.className.add('card-tech-list');
+  projectDetailsDiv.appendChild(cardTechList);
+
+  for(let i = 0; i < 3; i++){
+      var cardTechListItem = document.createElement('li');
+      cardTechListItem.classList.add('card-tech')
+      cardTechListItem.textContent = project_card.technologies[i];
+      cardTechList.appendChild(cardTechListItem);
+      /*if(i === 0) {cardTechListItem.classList.add('first-tech');}*/
+  }
+
+  var firstTechListItem = document.querySelector(cardTechListItem)[0];
+  firstTechListItem.className.add('first-tech');
+
+  var seeProjectBtnDiv = document.createElement('div');
+  seeProjectBtnDiv.className.add('see-project-btn-div');
+  projectCardDiv.appendChild(seeProjectBtnDiv);
+
+  var createSeeProjectBtn = document.createElement('button');
+  createSeeProjectBtn.classList.add('btn')
+  createSeeProjectBtn.innerHTML = "See Project";
+  seeProjectBtnDiv.addEventListener('onclick', function (){
+    displayPopupItems(project_card);
+  });
+  seeProjectBtnDiv.appendChild(createSeeProjectBtn);
+}
+
+
+  var displayPopupItems = (project_card) => {
+  const headerDetails = document.querySelector('.popup-header-div h2');
+  headerDetails.textContent = project_card.header;
+
+  var technologiesList = document.querySelector('.post-stories-tech-list');
+
+  document.querySelectorAll('.post-stories-tech').forEach(element => {
+      element.remove();
+  });
+
+  project_card.technologies.forEach(element => {
+      const technnologies_list_item = document.createElement('li');
+      technnologies_list_item.classList.add('.post-stories-tech');
+      technnologies_list_item.textContent = element;
+      technologiesList.appendChild(technnologies_list_item);
+  });
+
+  document.querySelector('.popup-info-div img').setAttribute('src', project_card.img_src);
+  document.querySelector('.popup-paragraph-container p').textContent = project_card.paragraph;
+
+  const popupDetails = document.querySelector('.popup-container');
+  popupDetails.classList.toggle('active');
+};
+  
+document.querySelector('.cancel-popup-window').addEventListener('click', function (){
+  displayPopupItems(projectCardData[0]);
+});
+
+document.querySelector('.post-stories-btn-div button').addEventListener('click', function (){
+  displayPopupItems(projectCardData[0]);
+});
+
