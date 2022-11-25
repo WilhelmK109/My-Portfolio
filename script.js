@@ -83,7 +83,163 @@ if (savedData !== null) {
 
 /*==========POPUP WINDOW==========*/
 
+var projectCardData = [
+  {
+      header: "Profesional Art Printing Data More",
+      paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+      technologies: ['html', 'css', 'javascript'],
+      img_src: "img/Snapsoot-Portfolio-Large.png",
+      liveLink: '#',
+      sourceLink: '#',
+  },
+  {
+      header: "Data Dashboard Healthcare",
+      paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+      technologies: ['html', 'css', 'javascript'],
+      img_src: "img/Snapshoot-Portfolio-Large.png",
+      liveLink: '#',
+      sourceLink: '#',
+  },
+  {
+      header: "Website Portfolio",
+      paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+      technologies: ['html', 'css', 'javascript'],
+      img_src: "img/Img-1.png",
+      liveLink: '#',
+      sourceLink: '#',
+  },
+  {
+      header: "Profesional Art Printing Data",
+      paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+      technologies: ['html', 'css', 'javascript'],
+      img_src: "img/Snapshoot-Portfolio-Large.png",
+      liveLink: '#',
+      sourceLink: '#',
+  },
+  {
+      header: "Profetional Art Printing Data More",
+      paragraph: "We must create better relations with the EARTHLINGS",
+      technologies: ['html', 'css', 'javascript'],
+      img_src: "img/Img-1.png",
+      liveLink: '#',
+      sourceLink: '#',
+  },
+  {
+      header: "Website Protfolio",
+      paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+      technologies: ['html', 'css', 'javascript'],
+      img_src: "img/Snapshoot-Portfolio-Large.png",
+      liveLink: '#',
+      sourceLink: '#',
+  }
+];
+
+function CreateProjectCard (project_card) {
+
+  var projectCardDiv = document.createElement('div');
+  projectCardDiv.classList.add('card');
+  document.querySelector('.work-container').appendChild(projectCardDiv);
+
+  var projectButton = document.createElement('button');
+  projectButton.classList.add('card-hover');
+  projectButton.addEventListener('click', function (){
+    displayPopupItems(project_card);
+  });
+
+  projectCardDiv.appendChild(projectButton);
+
+  var projectCardDataDiv = document.createElement('div');
+  projectCardDataDiv.classList.add('card-2');
+  projectCardDiv.appendChild(projectCardDataDiv);
+
+  var projectHeader = document.createElement('h2');
+  projectHeader.textContent = project_card.header;
+  projectCardDataDiv.appendChild(projectHeader);
+
+  var projectText = document.createElement('p');
+  projectText.textContent = project_card.paragraph;
+  projectCardDataDiv.appendChild(projectText);
+
+  var cardTechList = document.createElement('ul');
+  cardTechList.classList.add('card-tech-list');
+  projectCardDataDiv.appendChild(cardTechList);
+
+  for(let i = 0; i < 3; i++){
+      var cardTechListItem = document.createElement('li');
+      cardTechListItem.classList.add('card-tech')
+      if(i === 0) {cardTechListItem.classList.add('first-tech');}
+      cardTechListItem.textContent = project_card.technologies[i];
+      cardTechList.appendChild(cardTechListItem);
+  }
+
+  var seeProjectDiv = document.createElement('div');
+  seeProjectDiv.classList.add('see-project-btn-div');
+  projectCardDiv.appendChild(seeProjectDiv);
+
+  var seeProjectBtn = document.createElement('button');
+  seeProjectBtn.classList.add('btn')
+  seeProjectBtn.textContent = 'See Project';
+  seeProjectBtn.addEventListener('onclick', function (){
+    displayPopupItems(project_card);
+  });
+  seeProjectDiv.appendChild(seeProjectBtn);
+}
+
 var displayPopupItems = (project_card) => {
+  var headerDetails = document.querySelector('.popup-header-container h2');
+  headerDetails.textContent = project_card.header;
+
+  var technologiesList = document.querySelector('.post-stories-tech-list');
+
+  document.querySelectorAll('.post-stories-tech').forEach(element => {
+      element.remove();
+  });
+
+  project_card.technologies.forEach(element => {
+      var technnologies_list_item = document.createElement('li');
+      technnologies_list_item.classList.add('.post-stories-tech');
+      technnologies_list_item.textContent = element;
+      technologiesList.appendChild(technnologies_list_item);
+  });
+
+  document.querySelector('.popup-info-div img').setAttribute('src', project_card.img_src);
+  document.querySelector('.popup-paragraph-container p').textContent = project_card.paragraph;
+
+  var popupDetails = document.querySelector('.popup-window-container');
+  popupDetails.classList.toggle('active');
+};
+
+for(let i = 0; i < projectCardData.length; i++){
+  CreateProjectCard(projectCardData[i]);
+}
+  
+document.querySelector('.cancel-popup-window').addEventListener('click', function (){
+  displayPopupItems(projectCardData[0]);
+});
+
+document.querySelector('.post-stories-btn-div button').addEventListener('click', function (){
+  displayPopupItems(projectCardData[0]);
+});
+
+var selectBtn = document.querySelectorAll('.btn');
+var closeBtn = document.querySelector('.close-btn');
+var selectPopupWindow = document.querySelector('.popup-window-container');
+  selectBtn.forEach((btn) => {
+    btn.onclick = () => {
+      selectPopupWindow.style.display = 'grid';
+    }
+  })
+  
+  closeBtn.forEach((btn) => {
+    btn.onclick = () => {
+      selectPopupWindow.classList.remove('.popup-window-container');
+    }
+  });
+
+
+
+
+/*var displayPopupItems = (project_card) => {
   var headerDetails = document.querySelector('.popup-header-div h2');
   headerDetails.textContent = project_card.header;
   
@@ -193,7 +349,7 @@ function createProjectCards (project_card) {
       cardTechListItem.textContent = project_card.technologies[i];
       cardTechList.appendChild(cardTechListItem);
       /*if(i === 0) {cardTechListItem.classList.add('first-tech');}*/
-  }
+  /*}
 
   var firstTechListItem = document.querySelector(cardTechListItem)[0];
   firstTechListItem.classList.add('first-tech');
@@ -225,7 +381,7 @@ document.querySelector('.cancel-popup-window').addEventListener('click', functio
 
 document.querySelector('.post-stories button').addEventListener('click', function (){
   displayPopupItems(projectCardData[0]);
-});
+});*/
 
 /*var popupWindowSection = document.getElementById("popup-window-section");
 var button = document.getElementsByClassName('.btn');

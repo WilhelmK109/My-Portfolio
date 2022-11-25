@@ -310,6 +310,14 @@ hr {
   cursor: pointer;
 }
 
+.close-btn {
+  z-index: 100;
+  color: #000;
+  position: absolute;
+  top: 24px;
+  right: 20px;
+}
+
 .card {
   background: url(img/Img-2.png);
   background-repeat: no-repeat;
@@ -327,7 +335,7 @@ hr {
 }
 
 .card-2 h2 {
-  width: 240px;
+  width: 100%;
   font-size: 32px;
   font-weight: 400;
   font-family: "Crete Round", sans-serif;
@@ -364,6 +372,15 @@ hr {
 
 .see-project-btn-div {
   display: flex;
+  width: 327px;
+  justify-content: center;
+  justify-items: stretch;
+  margin-top: -25px;
+  height: 52px;
+}
+
+.see-project-btn-div button{
+  width: 327px;
   justify-content: center;
   justify-items: stretch;
   margin-top: -25px;
