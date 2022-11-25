@@ -221,7 +221,7 @@ document.querySelector('.post-stories-btn-div button').addEventListener('click',
   displayPopupItems(projectCardData[0]);
 });
 
-var selectBtn = document.querySelectorAll('.btn');
+/*var selectBtn = document.querySelectorAll('.btn');
 var closeBtn = document.querySelector('.close-btn');
 var selectPopupWindow = document.querySelector('.popup-window-container');
   selectBtn.forEach((btn) => {
@@ -234,7 +234,7 @@ var selectPopupWindow = document.querySelector('.popup-window-container');
     btn.onclick = () => {
       selectPopupWindow.classList.remove('.popup-window-container');
     }
-  });
+  });*/
 
 
 
