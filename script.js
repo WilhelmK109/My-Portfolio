@@ -44,9 +44,9 @@ function storageAvailable(type) {
 
             || e.name === 'QuotaExceededError'
 
-            || e.name === 'NS_ERROR_DOM_QUOTA_REACHED')
+            || e.name === 'NS_ERROR_DOM_QUOTA_REACHED') && 
 
-            && (storage && storage.length !== 0);
+            (storage && storage.length !== 0);
   }
 }
 
@@ -65,18 +65,18 @@ if (storageAvailable('localStorage')) {
     });
   });
 
-  const getInput = JSON.parse(localStorage.getItem('data'));
+  const getUserInput = JSON.parse(localStorage.getItem('data'));
 
   if (getInput) {
-    validateForm.name.value = getInput.fullName;
-    validateForm.message.value = getInput.message;
-    validateForm.email.value = getInput.email;
+    validateForm.name.value = getUserInput.fullName;
+    validateForm.email.value = getUserInput.email;
+    validateForm.message.value = getUserInput.message;
   }
 }
 
-const savedData = JSON.parse(localStorage.getItem(1));
-if (savedData !== null) {
-  fName.value = savedData.name;
-  uEmail.value = savedData.email;
-  uMessage.value = savedData.message;
+const getSavedData = JSON.parse(localStorage.getItem(1));
+if (getSavedData !== null) {
+  fName.value = getSavedData.name;
+  uEmail.value = getSavedData.email;
+  uMessage.value = getSavedData.message;
 }
