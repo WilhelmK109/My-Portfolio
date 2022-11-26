@@ -73,6 +73,10 @@ if (savedData !== null) {
 }
 
 /*==========POPUP WINDOW==========*/
+function showPopup() {
+  document.querySelector('.popup-window-container').style.display = 'flex';
+  document.querySelector('.popup-container').style.filter = 'blur(5px)';
+}
 
 var projectCardData = [
   {
@@ -228,7 +232,7 @@ const overlay = document.getElementById('overlay');
 
 openModalBtn.forEach(button => {
   button.addEventListener('click', () => {
-    let modal = document.querySelector('.popup-window-container')
+    let modal = document.querySelector('.popup-window-container').style.filter= 'blur(5px)';
     openModal(modal)
   })
 })

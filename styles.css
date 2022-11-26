@@ -878,6 +878,8 @@ hr {
 
   .popup-window-container {
     display: flex;
+    top: 50%;
+    left: 50%;
     flex-direction: column;
     width: 1156px;
     height: 631px;
@@ -885,9 +887,6 @@ hr {
   }
 
   .popup-container {
-    display: inline-block;
-    max-width: 100%;
-    height: auto;
     background: white;
   }
 
