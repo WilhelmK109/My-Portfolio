@@ -331,8 +331,6 @@ hr {
   opacity: 1;
 }
 
-
-
 .btn {
   background-color: #ff6b00;
   border: none;
@@ -886,12 +884,12 @@ hr {
     background: white;
   }
 
-  /*.popup-container {
+  .popup-container {
     display: inline-block;
     max-width: 100%;
     height: auto;
     background: white;
-  }*/
+  }
 
   .popup-header h2 {
     margin-top: 30px;
@@ -901,7 +899,6 @@ hr {
     margin-top: -30px;
     flex-direction: row;
   }
-
 
   .popup-container img {
     width: 659px;
