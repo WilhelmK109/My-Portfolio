@@ -498,10 +498,11 @@ hr {
 
   .nav-menu {
     position: fixed;
-    gap: 0%;
+    gap: 3%;
     flex-direction: column;
     background-color: #3c3a39;
-    width: 100%;
+    width: 100vw;
+    height: 90vh;
     text-align: center;
     transition: 0.3s;
     top: 70px;
@@ -513,6 +514,10 @@ hr {
     padding: 0.5rem 1rem;
     display: block;
     text-decoration: none;
+    font-size: 28px;
+    border: none;
+    border-bottom: 1px solid #979493;
+    margin: 0% 5%;
   }
 
   .nav-menu.active {
@@ -556,6 +561,8 @@ hr {
   .contact-form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     left: 0;
     background-color: #ffff;
@@ -630,6 +637,20 @@ hr {
     line-height: 24px;
     border: none;
     color: #3c3a39;
+  }
+
+  .msg {
+    width: 70%;
+    height: auto;
+    background: #fbf8f7;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1c1a19;
+    margin-top: 0%;
+    border: 1px dashed red;
   }
 
   .submit {
@@ -906,16 +927,17 @@ hr {
   }
 
   .msg {
-    width: 70%;
+    width: 40%;
     height: auto;
     background: #fbf8f7;
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     color: #1c1a19;
     margin-top: 5%;
+    border: 1px dashed red;
   }
 
   .form input:nth-child(2) {
