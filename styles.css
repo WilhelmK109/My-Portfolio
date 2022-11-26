@@ -146,18 +146,17 @@ body {
 }
 
 .popup-window-container {
-  width: 90vw;
+  width: 343px;
   position: fixed;
-  top: 45%;
+  top: 50%;
   left: 50%;
-  height: auto;
+  height: 718px;
   background: #fff;
   padding-top: 0%;
   margin: 10% auto;
   overflow: hidden;
   transform: translate(-50%, -50%) scale(0);
   transition: 200ms ease-in-out;
-  border-radius: 3px;
   z-index: 10;
 }
 
@@ -317,6 +316,22 @@ hr {
   font-size: 16px;
   transition: 0.25s;
 }
+
+#overlay {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+#overlay.active {
+  position: fixed;
+  opacity: 1;
+}
+
+
 
 .btn {
   background-color: #ff6b00;
@@ -867,17 +882,16 @@ hr {
     display: flex;
     flex-direction: column;
     width: 1156px;
-    height: auto;
+    height: 631px;
     background: white;
-    max-height: 631px;
   }
 
-  .popup-container {
+  /*.popup-container {
     display: inline-block;
     max-width: 100%;
     height: auto;
     background: white;
-  }
+  }*/
 
   .popup-header h2 {
     margin-top: 30px;
@@ -888,22 +902,22 @@ hr {
     flex-direction: row;
   }
 
+
   .popup-container img {
     width: 659px;
     height: 448px;
   }
 
   .popup-card-details {
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
+    gap: 25px;
   }
 
   .popup-para-div {
-    display: inline-block;
-    margin-top: 20px;
-    right: 0%;
-    width: 424px;
-    height: 336px;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
   }
 

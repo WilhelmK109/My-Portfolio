@@ -213,17 +213,18 @@ document.querySelector('.btn-div button').addEventListener('click', function (){
 });
 
 function openModal (modal) {
-  /*if (modal == null) return*/
   modal.classList.add('active')
+  overlay.classList.add('active')
 }
 
 function closeModal(modal) {
-  /*if(modal == null) return*/
   modal.classList.remove('active')
+  overlay.classList.remove('active')
 }
 
 let openModalBtn = document.querySelectorAll('[data-modal-target]');
 let closeModalBtn = document.querySelector('.close-popup-btn');
+const overlay = document.getElementById('overlay');
 
 openModalBtn.forEach(button => {
   button.addEventListener('click', () => {
@@ -236,16 +237,3 @@ closeModalBtn.addEventListener('click', () => {
     let modal = document.querySelector('.popup-window-container')
     closeModal(modal)
   })
-
-
-  /*selectBtn.forEach((btn) => {
-    btn.onclick = () => {
-      selectPopupWindow.style.display = 'grid';
-    }
-  })*/
-  
-  /*closeBtn.forEach((btn) => {
-    btn.onclick = () => {
-      selectPopupWindow.classList.remove('.popup-window-container');
-    }
-  });*/
