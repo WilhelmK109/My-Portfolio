@@ -893,10 +893,15 @@ hr {
     height: 448px;
   }
 
+  .popup-card-details {
+    display: flex;
+    flex-direction: row;
+  }
+
   .popup-para-div {
     display: inline-block;
-    margin-top: 10px;
-    flex-direction: column;
+    margin-top: 20px;
+    right: 0%;
     width: 424px;
     height: 336px;
     justify-content: space-between;
