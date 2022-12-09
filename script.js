@@ -30,23 +30,6 @@ validateForm.addEventListener('submit', (event) => {
   }
 });
 
-/*=================Local Storage==============*/
-
-  const getUserInput = JSON.parse(localStorage.getItem('data'));
-
-  if (getInput) {
-    validateForm.name.value = getUserInput.fullName;
-    validateForm.email.value = getUserInput.email;
-    validateForm.message.value = getUserInput.message;
-  }
-}
-
-const getSavedData = JSON.parse(localStorage.getItem(1));
-if (getSavedData !== null) {
-  fName.value = getSavedData.name;
-  uEmail.value = getSavedData.email;
-  uMessage.value = getSavedData.message;
-}
 /*==========POPUP WINDOW==========*/
 function showPopup() {
   document.querySelector('.popup-window-container');
