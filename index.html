@@ -12,12 +12,19 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Playfair+Display:wght@400;500;700&family=Poppins:wght@200;400&display=swap"
     rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+  <script defer src="script.js"></script>
 </head>
 
 <body>
   <header>
     <nav class="navbar">
-      <a id="name" href="">John Doe</a>
+      <a id="name" href="">Tate K</a>
       <ul class="nav-menu">
         <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
@@ -29,9 +36,38 @@
         <span class="bar"></span>
         <span class="bar"></span>
       </div>
+      <div class="popup-window-container">
+        <div class="popup-container">
+          <div class="popup-multi-post-div popup-header-container">
+            <h2>Multi Post Stories</h2>
+            <ul class="popup-tech-list">
+              <li class="popup-tech-list-items">html</li>
+              <li class="popup-tech-list-items">Bootstrap</li>
+              <li class="popup-tech-list-items">Ruby on rails</li>
+            </ul>
+          </div>
+          <div class="popup-card-details">
+            <img src="img/Snapshoot-Portfolio.png" alt="Popup image">
+            <div class="popup-para-div">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam amet a architecto corrupti fugit accusantium.
+                  Molestiae, debitis? Sed, magni, accusamus officiis delectus illum quasi adipisci, nobis maiores ullam voluptate
+                  repellendus.
+              </p>
+              <div class="popup-link-btn-div">
+                <button class="link-button">See Live</button>
+                <button class="link-button">See Source</button>
+              </div>
+            </div>
+          </div>
+          <div data-close-button class="close-popup-btn"><i class="fa-solid fa-x"></i></div>
+        </div>
+      </div>
     </nav>
+    
   </header> 
+  
   <section class="home">
+  
     <div class="container">
       <div class="writing">
         <h1 class="heading">Hey There.<br>I'm Wilhelm</span></h1>
@@ -39,7 +75,7 @@
         <p class="description">I can help you build a product, feature or website. Look
           through some of my work and experience! If you like what you see
           and have a project you need coded,
-          don’t hestiate to contact me.
+          don’t hesitate to contact me.
         </p>
       </div>
       <div class="media-icon">
@@ -94,119 +130,12 @@
           <li>bootstrap</li>
           <li>Ruby</li>
         </ul>
-        <div><button class="btn" type="submit">See Project</button></div>
+        <div class="btn-div"><button data-modal-target=".popup-window-container" class="btn" type="submit">See Project</button></div>
       </div>
     </div>
-        
-    <div class="cards">
-      <div class="card">
-        <div class="card-2">
-          <h2 class="ds-card-2">Profesional Art<br />Printing Data</h2>
-          <p class="ds-card-2">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard
-          </p>
-          <ul class="card-technologies">
-            <li class="card-tech first-tech">html</li>
-            <li class="card-tech">bootstrap</li>
-            <li class="card-tech">Ruby</li>
-          </ul>
-        </div>
-        <div class="see-project-btn">
-          <button class="btn2" id="btn2" type="submit">See Project</button>
-        </div>
-      </div>
 
-      <div class="card">
-        <div class="card-2">
-          <h2 class="ds-card-2">Profesional Art<br />Printing Data</h2>
-          <p class="ds-card-2">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard
-          </p>
-          <ul class="card-technologies">
-            <li class="card-tech first-tech">html</li>
-            <li class="card-tech">bootstrap</li>
-            <li class="card-tech">Ruby</li>
-          </ul>
-        </div>
-        <div class="see-project-btn">
-          <button class="btn2" id="btn2" type="submit">See Project</button>
-        </div>
-      </div>
+    <!--INSERT CODE DYNAMICALLY-->
 
-      <div class="card">
-        <div class="card-2">
-          <h2 class="ds-card-2">Profesional Art<br />Printing Data</h2>
-          <p class="ds-card-2">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard
-          </p>
-          <ul class="card-technologies">
-            <li class="card-tech first-tech">html</li>
-            <li class="card-tech">bootstrap</li>
-            <li class="card-tech">Ruby</li>
-          </ul>
-        </div>
-        <div class="see-project-btn">
-          <button class="btn2" id="btn2" type="submit">See Project</button>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-2">
-          <h2 class="ds-card-2">Profesional Art<br />Printing Data</h2>
-          <p class="ds-card-2">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard
-          </p>
-          <ul class="card-technologies">
-            <li class="card-tech first-tech">html</li>
-            <li class="card-tech">bootstrap</li>
-            <li class="card-tech">Ruby</li>
-          </ul>
-        </div>
-        <div class="see-project-btn">
-          <button class="btn2" id="btn2" type="submit">See Project</button>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-2">
-          <h2 class="ds-card-2">Profesional Art<br />Printing Data</h2>
-          <p class="ds-card-2">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard
-          </p>
-          <ul class="card-technologies">
-            <li class="card-tech first-tech">html</li>
-            <li class="card-tech">bootstrap</li>
-            <li class="card-tech">Ruby</li>
-          </ul>
-        </div>
-        <div class="see-project-btn">
-          <button class="btn2" id="btn2" type="submit">See Project</button>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-2">
-          <h2 class="ds-card-2">Profesional Art<br />Printing Data</h2>
-          <p class="ds-card-2">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard
-          </p>
-          <ul class="card-technologies">
-            <li class="card-tech first-tech">html</li>
-            <li class="card-tech">bootstrap</li>
-            <li class="card-tech">Ruby</li>
-          </ul>
-        </div>
-        <div class="see-project-btn">
-          <button class="btn2" id="btn2" type="submit">See Project</button>
-        </div>
-      </div>
-    </div>
   </section>
 
   <section class="about-me" id="about">
@@ -346,6 +275,6 @@
         <hr class="hr3">
       </footer>
   </section>
-  <script src="script.js"></script>
+<div class="active" id="overlay"></div>
 </body>
 </html>
