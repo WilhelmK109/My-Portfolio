@@ -5,15 +5,25 @@
 }
 
 html {
-  scroll-behavior: smooth;
   overflow-x: hidden;
+}
+
+header {
+  width: 100vh;
 }
 
 body {
   overflow-x: hidden;
+  overflow-y: auto;
   margin: 0;
   box-sizing: content-box;
   background: rgba(255, 255, 255, 0.24);
+}
+
+.no-scroll {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: fixed;
 }
 
 /* ------------navigation bar------------- */
@@ -25,7 +35,7 @@ body {
   height: 92px;
   background-color: #3c3a39;
   position: fixed;
-  z-index: 10;
+  z-index: 100;
 }
 
 .nav-bar > * {
@@ -99,7 +109,7 @@ body {
 .writing {
   display: flex;
   flex-direction: column;
-  width: 85%;
+  margin-top: 100px;
 }
 
 .heading {
@@ -143,6 +153,7 @@ body {
   column-gap: 30px;
   padding-left: 10px;
   margin-top: 12px;
+  margin-bottom: 130px;
 }
 
 .popup-window-container {
@@ -178,18 +189,24 @@ body {
   box-sizing: border-box;
 }
 
-.popup-window-container img {
+.popup-card-details {
+  margin-top: 70px;
+  padding-left: 3%;
+}
+
+.popup-card-details img {
   width: 311px;
   height: 220px;
 }
 
-.popup-header {
+.popup-header-container {
+  margin-top: 35px;
   height: 80px;
+  padding-left: 3%;
 }
 
-.popup-header h2 {
+.popup-header-container h2 {
   font-size: 32px;
-  margin-top: 92px;
 }
 
 .popup-tech-list {
@@ -223,6 +240,8 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  cursor: pointer;
+  padding-left: 0%;
 }
 
 .popup-link-btn-div button {
@@ -315,20 +334,7 @@ hr {
   font-weight: 600;
   font-size: 16px;
   transition: 0.25s;
-}
-
-#overlay {
-  position: fixed;
-  background: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  top: 0%;
-  left: 0%;
-  right: 0%;
-}
-
-#overlay.active {
-  position: fixed;
-  opacity: 1;
+  cursor: pointer;
 }
 
 .btn {
@@ -409,19 +415,22 @@ hr {
   justify-content: center;
   justify-items: stretch;
   margin-top: -25px;
+  cursor: pointer;
 }
 
 .card-hover {
   position: absolute;
   height: 336px;
-  width: 424px;
+  width: 327px;
   border: none;
   background: none;
+  cursor: pointer;
 }
 
 .btn:hover {
   background-color: #e2ab8d;
   transition: 0.7s;
+  cursor: pointer;
 }
 
 .btn2 {
@@ -432,11 +441,13 @@ hr {
   border: none;
   margin-top: -2px;
   font-size: 15px;
+  cursor: pointer;
 }
 
 .btn2:hover {
   background-color: #e09494;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .about-me {
@@ -447,6 +458,11 @@ hr {
   background-image: url(img/Frame.png);
   background-repeat: no-repeat;
   background-position: top 395px right 0%;
+}
+
+.about {
+  width: 100%;
+  margin: 0% 10px;
 }
 
 .about h2 {
@@ -494,7 +510,7 @@ hr {
   display: flex;
   width: 327px;
   margin-top: 220px;
-  margin-left: 24px;
+  margin-left: 5%;
   border: 1px solid #fff;
 }
 
@@ -503,6 +519,8 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  align-content: center;
+  margin-top: 55px;
 }
 
 .language,
@@ -530,20 +548,21 @@ hr {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 22px;
-  display: flex;
-  align-items: center;
-  text-align: center;
 }
 
-.tech-language ul li {
-  text-align: center;
+.tech-language ul,
+.tech-framework ul,
+.tech-skills ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 0%;
 }
 
 .skills {
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .framework {
@@ -571,6 +590,9 @@ hr {
 .tech-skills ul li a {
   text-decoration: none;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
   gap: 32px;
   text-align: center;
   font-size: 20px;
@@ -819,7 +841,7 @@ hr {
 }
 
 /* ---------desktop media queries...... */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
   .navbar {
     display: flex;
     padding: 0% 10%;
@@ -878,7 +900,7 @@ hr {
 
   .popup-window-container {
     display: flex;
-    top: 50%;
+    top: 40%;
     left: 50%;
     flex-direction: column;
     width: 1156px;
@@ -895,26 +917,27 @@ hr {
   }
 
   .card-tech-list {
-    margin-top: -30px;
+    margin-top: 10px;
     flex-direction: row;
   }
 
-  .popup-container img {
+  .popup-card-details {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .popup-card-details img {
+    grid-column: 1/2;
     width: 659px;
     height: 448px;
   }
 
-  .popup-card-details {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-  }
-
   .popup-para-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    grid-column: 2/3;
+    width: 400px;
+    row-gap: 25px;
   }
 
   .popup-para-div p {
@@ -929,14 +952,15 @@ hr {
 
   .work-container {
     display: grid;
-    grid-template-columns: repeat(3, 350px);
-    row-gap: 80px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    row-gap: 20px;
+    justify-items: center;
+    align-items: center;
   }
 
   .recent-work {
     grid-column: 1/4;
     grid-template-columns: 0.25fr 0.75fr;
-    align-items: center;
   }
 
   .recent-work h2 {
@@ -946,7 +970,7 @@ hr {
   .recent-work hr {
     height: 1.5px;
     margin: 28px 0% 0% 40px;
-    width: 60%;
+    width: 100%;
   }
 
   .post-stories {
@@ -961,6 +985,7 @@ hr {
     flex-direction: column;
     justify-content: flex-start;
     gap: 10px;
+    padding-left: 20px;
   }
 
   .multi-post {
@@ -999,7 +1024,6 @@ hr {
   .card {
     height: 435px;
     display: grid;
-    grid-template-columns: repeat(3, 369px);
   }
 
   .card-hover:hover {

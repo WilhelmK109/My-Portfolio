@@ -1,3 +1,16 @@
+/*====================Mobile Menu====================*/
+const hamMenu = document.querySelector(".ham");
+const navMenu = document.querySelector(".nav-menu");
+
+hamMenu.addEventListener('click', () => {
+  hamMenu.classList.toggle('active');
+  navMenu.classList.toggle('active');
+});
+
+document.querySelectorAll('.nav-menu').forEach((navLink) => navLink.addEventListener('click', () => {
+  hamMenu.classList.remove('active');
+  navMenu.classList.remove('active');
+}));
 
 /*=============Contact form email validation============*/
 
@@ -74,8 +87,8 @@ if (savedData !== null) {
 
 /*==========POPUP WINDOW==========*/
 function showPopup() {
-  document.querySelector('.popup-window-container').style.display = 'flex';
-  document.querySelector('.popup-container').style.filter = 'blur(5px)';
+  document.querySelector('.popup-window-container');
+  document.querySelector('.popup-container');
 }
 
 var projectCardData = [
@@ -120,7 +133,7 @@ var projectCardData = [
       sourceLink: '#',
   },
   {
-      header: "Website Protfolio",
+      header: "Website Portfolio",
       paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
       technologies: ['html', 'css', 'javascript'],
       img_src: "img/Snapshoot-Portfolio.png",
@@ -170,6 +183,9 @@ function CreateProjectCard (project_card) {
   const seeProjectDiv = document.createElement('div');
   seeProjectDiv.classList.add('see-project-btn-div');
   projectCardDiv.appendChild(seeProjectDiv);
+  seeProjectDiv.addEventListener('click', function (){
+    displayPopupItems(project_card);
+  });
 
   const seeProjectBtn = document.createElement('button');
   seeProjectBtn.classList.add('btn2')
@@ -197,7 +213,7 @@ let displayPopupItems = (project_card) => {
       technologiesList.appendChild(technnologies_list_item);
   });
 
-  document.querySelector('.popup-container img').setAttribute('src', project_card.img_src);
+  document.querySelector('.popup-card-details img').setAttribute('src', project_card.img_src);
   document.querySelector('.popup-para-div p').textContent = project_card.paragraph;
 
   let popupDetails = document.querySelector('.popup-window-container');
@@ -217,22 +233,19 @@ document.querySelector('.btn-div button').addEventListener('click', function (){
 });
 
 function openModal (modal) {
-  modal.classList.add('active')
-  overlay.classList.add('active')
+  modal.classList.add('active') 
 }
 
 function closeModal(modal) {
   modal.classList.remove('active')
-  overlay.classList.remove('active')
 }
 
 let openModalBtn = document.querySelectorAll('[data-modal-target]');
 let closeModalBtn = document.querySelector('.close-popup-btn');
-const overlay = document.getElementById('overlay');
 
 openModalBtn.forEach(button => {
   button.addEventListener('click', () => {
-    let modal = document.querySelector('.popup-window-container').style.filter= 'blur(5px)';
+    let modal = document.querySelector('.popup-window-container');
     openModal(modal)
   })
 })
@@ -241,3 +254,16 @@ closeModalBtn.addEventListener('click', () => {
     let modal = document.querySelector('.popup-window-container')
     closeModal(modal)
   })
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('button').forEach(trigger => {
+    trigger.addEventListener('click', function() {
+      document.querySelectorAll('body').forEach(target => target.classList.add('no-scroll'));
+    });
+  });
+  document.querySelectorAll('.close-popup-btn').forEach(trigger => {
+    trigger.addEventListener('click', function() {
+      document.querySelectorAll('body').forEach(target => target.classList.remove('no-scroll'));
+    });
+  });
+});
